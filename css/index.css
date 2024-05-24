@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Ubuntu Sans", sans-serif;
+}
+
+body,
+main,
+aside,
+.logo,
+.entradas,
+.contenedor-entradas,
+.contenedor-boton,
+.estas-seguro {
+  display: flex;
+}
+
+.bienvenida,
+main {
+  flex: auto;
+  background-color: whitesmoke;
+}
+
+aside {
+  width: 35%;
+  background-image: url(../img/matica.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 10%;
+  width: 100%;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  background-color: #00000096;
+  padding: 15px 0;
+  font-family: "Skranji", system-ui;
+  font-style: normal;
+}
+
+img {
+  height: 100%;
+}
+
+.texto-footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.medio {
+  width: 65%;
+  margin-top: 8rem;
+}
+
+.cuerpo-formulario {
+  height: auto;
+}
+
+.bienvenida {
+  max-width: 800px;
+  font-size: 1.3rem;
+  margin: 0 30px;
+}
+
+p {
+  background-color: white;
+  margin: 0;
+  font-size: 1.1rem;
+  padding: 0 30px;
+}
+
+.cuerpo-formulario > .bienvenida + p {
+  background-color: whitesmoke;
+  margin: 20px 30px 60px 30px;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+form {
+  height: auto;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-entradas {
+  max-width: 708px;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+
+.entradas {
+  flex-direction: column;
+  flex: 1 0 250px;
+  height: auto;
+  justify-content: center;
+}
+
+#nombre,
+#apellido,
+#correo,
+#telefono,
+#contraseña,
+#confirmar-contraseña {
+  padding: 8px;
+  border-radius: 7px;
+  border: 2px solid grey;
+}
+
+label {
+  font-size: 0.95rem;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-weight: normal;
+  color: #2a2a2a;
+}
+
+.contenedor-boton {
+  padding: 30px 30px 30px 30px;
+}
+
+#enviar {
+  padding: 10px 45px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.estas-seguro {
+  padding: 0 30px;
+  font-size: 0.95rem;
+}
+
+a {
+  color: green;
+}
+
+#enviar:hover {
+  cursor: pointer;
+  background-color: #0ba30b;
+}
+
+#enviar:active {
+  background-color: #006600;
+}
+
+a:hover {
+  color: #0ba30b;
+}
+
+a:active {
+  color: #006600;
+}
+
+@media (max-width: 425px) {
+  main {
+    flex-direction: column;
+    height: 100%;
+  }
+  aside,
+  .medio {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .medio {
+    margin-top: 60px;
+  }
+
+  aside {
+    height: 33%;
+  }
+
+  .logo {
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .texto-footer {
+    margin-top: auto;
+  }
+
+  .contenedor-boton,
+  .estas-seguro {
+    justify-content: center;
+  }
+
+  .estas-seguro {
+    margin-bottom: 60px;
+  }
+}
